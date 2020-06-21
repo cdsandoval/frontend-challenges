@@ -128,5 +128,23 @@ ul li img {
 
 .left-storage {
   position: absolute;
-  bottom: 0px;
+  bottom: -25px;
+  width: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  height: 40px;
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 0.8em;
+  text-transform: uppercase;
+  color: hsl(229, 7%, 55%);
+  font-weight: bold;
+}
+
+.left-storage span {
+  font-size: 30px;
+  color: #000;
+  margin: 5px;
 }
