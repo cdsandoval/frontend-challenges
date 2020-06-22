@@ -3,7 +3,7 @@ body {
   padding: 0px;
   margin: 0px;
   font-family: "Raleway", sans-serif;
-  background-image: url("./images/bg-desktop.svg");
+  background-image: url("./images/bg-mobile.svg");
   background-repeat: no-repeat;
   background-position: bottom;
   background-color: hsl(229, 57%, 11%);
@@ -70,12 +70,6 @@ ul li img {
 
 .logo {
   margin-bottom: 30px;
-}
-
-@media (max-width: 375px) {
-  body {
-    background-image: url("./images//bg-mobile.svg");
-  }
 }
 
 .msg {
@@ -147,4 +141,40 @@ ul li img {
   font-size: 30px;
   color: #000;
   margin: 5px;
+}
+
+@media (min-width: 500px) {
+  body {
+    background-image: url("./images//bg-desktop.svg");
+  }
+
+  .main {
+    display: flex;
+    align-items: flex-end;
+  }
+
+  .card-info {
+    height: 100px;
+    width: 700px;
+  }
+
+  .left-storage {
+    top: -25px;
+    right: 60px;
+    border-radius: 10px 10px 0px 10px;
+  }
+
+  .left-storage:after {
+    position: absolute;
+    top: 100%;
+    left: calc(100% - 20px);
+    width: 0px;
+    height: 0px;
+    border: 10px solid;
+    border-bottom-color: transparent;
+    border-top-color: white;
+    border-left-color: transparent;
+    border-right-color: white;
+    content: "";
+  }
 }
