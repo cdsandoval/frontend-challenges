@@ -154,8 +154,12 @@ ul li img {
   }
 
   .card-info {
-    height: 100px;
-    width: 700px;
+    height: 80px;
+    width: 100%;
+  }
+
+  .list-icon {
+    display: flex;
   }
 
   .left-storage {
